@@ -1,0 +1,3 @@
+# Ignore IDE configurations
+.vscode/
+*.code-workspace
