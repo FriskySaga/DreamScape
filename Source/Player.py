@@ -1,5 +1,7 @@
 """
 Class to represent a Player
+
+TODO Create unit tests
 """
 
 class Player:

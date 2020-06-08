@@ -1,3 +1,10 @@
+"""
+Create all monsters in this module.
+
+TODO Consider separating monsters into separate classes
+"""
+
+# Project imports
 from Source.Monster import Monster
 
 class Farmer(Monster):
@@ -10,11 +17,11 @@ class Farmer(Monster):
       "Tomato Seed": (0.2, False, []),
       "Stolen Waffle": (1.0, True, [2])
     }
-    self.hasRareDropTable = False
+    self.hasRareDrop = False
 
   @staticmethod
   def examine():
-    return ("This guy sure likes to grow stuff!")
+    return "This guy sure likes to grow stuff!"
 
 class HillGiant(Monster):
 
@@ -25,8 +32,8 @@ class HillGiant(Monster):
       "Limpwurt Root": (0.3, False, []),
       "Dwarven Emblem": (0.5, True, [1])
     }
-    self.hasRareDropTable = True
+    self.hasRareDrop = True
 
   @staticmethod
   def examine():
-    return ("Overgrown brute hailing from the hills.")
+    return "Overgrown brute hailing from the hills."
